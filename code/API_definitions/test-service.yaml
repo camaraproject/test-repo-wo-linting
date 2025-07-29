@@ -6,7 +6,7 @@ info:
   description: |
     A simple test service for validator testing.
 
-    # Authorization and authentication
+    # Authorization and authentication   
 
     The "Camara Security and Interoperability Profile" provides details of how an API consumer requests an access token. Please refer to Identity and Consent Management (https://github.com/camaraproject/IdentityAndConsentManagement/) for the released version of the profile.
 
