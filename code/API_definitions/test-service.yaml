@@ -1,5 +1,5 @@
 # Save as: test-data/valid/regular-apis/test-service.yaml
-openapi: 3.0.3
+openapi: 3.0.3  
 info:
   title: Test Service
   version: 1.0.0
@@ -93,7 +93,7 @@ components:
           type: string
           description: Test message
 
-    ErrorInfo:
+    ErrorInfo:  
       type: object
       required:
         - status
@@ -122,7 +122,7 @@ components:
       headers:
         X-Correlator:
           description: Correlation id for the different services
-          schema:
+          schema:    
             $ref: '#/components/schemas/XCorrelator'
       content:
         application/json:
@@ -135,7 +135,7 @@ components:
                 code: INVALID_ARGUMENT
                 message: Invalid input parameters
 
-    Generic401:
+    Generic401:    
       description: Unauthorized
       headers:
         X-Correlator:
