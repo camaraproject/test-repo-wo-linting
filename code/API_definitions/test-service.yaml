@@ -40,7 +40,7 @@ servers:
 
 paths:
   /test:
-    get:
+    get:   
       operationId: getTest
       summary: Get test data
       description: Retrieves test data from the service. This operation is used for validation testing purposes.
@@ -77,7 +77,7 @@ paths:
         '503':
           $ref: '#/components/responses/Generic503'
 
-components:
+components:   
   securitySchemes:
     openId:
       type: openIdConnect
