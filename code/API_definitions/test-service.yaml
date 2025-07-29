@@ -1,6 +1,6 @@
 # Save as: test-data/valid/regular-apis/test-service.yaml
 openapi: 3.0.3
-info:
+info:  
   title: Test Service
   version: 1.0.0
   description: |
