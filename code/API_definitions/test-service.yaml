@@ -39,7 +39,7 @@ servers:
         description: API root, defined by the service provider
 
 paths:
-  /test:
+  /test:   
     get:
       operationId: getTest
       summary: Get test data
@@ -77,13 +77,13 @@ paths:
         '503':
           $ref: '#/components/responses/Generic503'
 
-components:
+components:   
   securitySchemes:
     openId:
       type: openIdConnect
       openIdConnectUrl: https://example.com/.well-known/openid-configuration
 
-  schemas:
+  schemas:   
     TestResponse:
       type: object
       required:
