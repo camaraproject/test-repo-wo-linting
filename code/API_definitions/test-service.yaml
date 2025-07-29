@@ -118,7 +118,7 @@ components:
 
   responses:
     Generic400:
-      description: Bad Request
+      description: Bad Request  
       headers:
         X-Correlator:
           description: Correlation id for the different services
@@ -171,7 +171,7 @@ components:
                 code: PERMISSION_DENIED
                 message: Client does not have sufficient permission
 
-    Generic500:
+    Generic500:   
       description: Internal Server Error
       headers:
         X-Correlator:
@@ -185,11 +185,11 @@ components:
           examples:
             InternalError:
               value:
-                status: 500
+                status: 500 
                 code: INTERNAL
                 message: Server error
 
-    Generic503:
+    Generic503: 
       description: Service Unavailable
       headers:
         X-Correlator:
