@@ -54,7 +54,7 @@ paths:
           description: Correlation id for the different services
           schema:
             $ref: '#/components/schemas/XCorrelator'
-      responses:
+      responses:   
         '200':
           description: Success
           headers:
@@ -66,7 +66,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TestResponse'
-        '400':
+        '400':   
           $ref: '#/components/responses/Generic400'
         '401':
           $ref: '#/components/responses/Generic401'
@@ -90,10 +90,10 @@ components:
         - message
       properties:
         message:
-          type: string
+          type: string   
           description: Test message
 
-    ErrorInfo:
+    ErrorInfo:  
       type: object
       required:
         - status
