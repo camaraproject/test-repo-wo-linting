@@ -41,7 +41,7 @@ servers:
 paths:
   /test:
     get:
-      operationId: getTest
+      operationId: getTest  
       summary: Get test data
       description: Retrieves test data from the service. This operation is used for validation testing purposes.
       security:
@@ -83,7 +83,7 @@ components:
       type: openIdConnect
       openIdConnectUrl: https://example.com/.well-known/openid-configuration
 
-  schemas:
+  schemas
     TestResponse:
       type: object
       required:
@@ -135,7 +135,7 @@ components:
                 code: INVALID_ARGUMENT
                 message: Invalid input parameters
 
-    Generic401:
+    !Generic401:
       description: Unauthorized
       headers:
         X-Correlator:
