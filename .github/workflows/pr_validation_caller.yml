@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   pr_validation:
-    uses: camaraproject/tooling/.github/workflows/pr_validation.yml@main
+    uses: camaraproject/tooling/.github/workflows/pr_validation.yml@test-pr-validation-updates
     secrets: inherit
 # This workflow calls the reusable workflow from tooling repository
 # Tools configuration from the tooling repository branch indicated by `configurations` variable    
