@@ -24,6 +24,7 @@ jobs:
     uses: camaraproject/tooling/.github/workflows/pr_validation.yml@test-pr-validate-updates
     secrets: inherit
 # This workflow calls the reusable workflow from tooling repository
-# Tools configuration from the tooling repository branch indicated by `configurations` variable    
-#    with:
-#      configurations: staging
+# If the tooling workflow is not v0, it must be set below again in the variable tooling-ref
+# (due to GitHub Actions limitation - cannot auto-detect @ref from uses: statement)
+    with:
+      tooling-ref: test-pr-validate-updates
