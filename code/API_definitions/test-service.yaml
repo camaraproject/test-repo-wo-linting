@@ -31,7 +31,7 @@ externalDocs:
   description: Product documentation at CAMARA
   url: https://github.com/camaraproject/TestService
 
-servers:  
+servers: 
   - uri: '{apiRoot}/test-service/v1'
     variables:
       apiRoot:
