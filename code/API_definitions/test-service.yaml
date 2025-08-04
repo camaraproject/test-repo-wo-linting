@@ -31,8 +31,8 @@ externalDocs:
   description: Product documentation at CAMARA
   url: https://github.com/camaraproject/TestService
 
-servers:
-  - url: '{apiRoot}/test-service/v1'
+servers: 
+  - uri: '{apiRoot}/test-service/v1'
     variables:
       apiRoot:
         default: http://localhost:9091
@@ -41,7 +41,7 @@ servers:
 paths:
   /test:
     get:
-      operationId: getTest
+      operationId-wrong: getTest
       summary: Get test data
       description: Retrieves test data from the service. This operation is used for validation testing purposes.
       security:
