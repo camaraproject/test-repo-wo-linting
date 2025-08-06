@@ -99,7 +99,7 @@ components:
         - status
         - code
         - message  
-      preperties:
+      properties:
         status:
           type: integer
           description: HTTP response status code
