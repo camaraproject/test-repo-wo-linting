@@ -7,7 +7,6 @@ info:
     A simple test service for validator testing.
 
     # Authorization and authentication
-
     The "Camara Security and Interoperability Profile" provides details of how an API consumer requests an access token. Please refer to Identity and Consent Management (https://github.com/camaraproject/IdentityAndConsentManagement/) for the released version of the profile.
 
     The specific authorization flows to be used will be agreed upon during the onboarding process, happening between the API consumer and the API provider, taking into account the declared purpose for accessing the API, whilst also being subject to the prevailing legal framework dictated by local legislation.
@@ -84,7 +83,7 @@ components:
       openIdConnectUrl: https://example.com/.well-known/openid-configuration
 
   schemas:
-    TestResponse :
+    TestResponse:
       type: object
       required:
         - message
@@ -98,8 +97,8 @@ components:
       required:
         - status
         - code
-        - message  
-      preperties:
+        - message
+      properties:
         status:
           type: integer
           description: HTTP response status code
@@ -135,7 +134,7 @@ components:
                 code: INVALID_ARGUMENT
                 message: Invalid input parameters
 
-    Generic401:  
+    Generic401:
       description: Unauthorized
       headers:
         X-Correlator:
@@ -196,7 +195,7 @@ components:
           description: Correlation id for the different services
           schema:
             $ref: '#/components/schemas/XCorrelator'
-      context:
+      content:
         application/json:
           schema:
             $ref: '#/components/schemas/ErrorInfo'
